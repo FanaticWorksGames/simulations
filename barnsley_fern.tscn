@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c6ti7401eoht5"]
+
+[ext_resource type="Script" uid="uid://b0ulud65sc5ce" path="res://barnsley_fern.gd" id="1_by27v"]
+[ext_resource type="PackedScene" uid="uid://bfttyci3kenta" path="res://point.tscn" id="2_pbxby"]
+
+[node name="BarnsleyFern" type="Node2D" unique_id=1112264691 node_paths=PackedStringArray("initial_point")]
+script = ExtResource("1_by27v")
+initial_point = NodePath("Point")
+
+[node name="Point" parent="." unique_id=1756694262 instance=ExtResource("2_pbxby")]
+position = Vector2(0, 289)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1237895245]

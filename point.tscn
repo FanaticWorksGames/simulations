@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bfttyci3kenta"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_8u238"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_k70ah"]
+
+[node name="Node2D3" type="Node2D" unique_id=1756694262]
+
+[node name="Sprite2D" type="MeshInstance2D" parent="." unique_id=1227653784]
+scale = Vector2(3, 3)
+mesh = SubResource("SphereMesh_8u238")
+texture = SubResource("CanvasTexture_k70ah")

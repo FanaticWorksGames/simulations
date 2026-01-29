@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bnpo223aofikm"]
+
+[ext_resource type="Script" uid="uid://cpgdehnmech5e" path="res://Sierpinski.gd" id="1_tkhj8"]
+[ext_resource type="PackedScene" uid="uid://bfttyci3kenta" path="res://point.tscn" id="2_3ybue"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_8u238"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_k70ah"]
+
+[node name="GameTriangle" type="Node2D" unique_id=232502044]
+script = ExtResource("1_tkhj8")
+
+[node name="Node2D3" parent="." unique_id=1194746279 instance=ExtResource("2_3ybue")]
+position = Vector2(-314, 215)
+
+[node name="Node2D2" type="Node2D" parent="." unique_id=2006381368]
+position = Vector2(310, 222)
+
+[node name="Sprite2D" type="MeshInstance2D" parent="Node2D2" unique_id=864707326]
+scale = Vector2(3, 3)
+mesh = SubResource("SphereMesh_8u238")
+texture = SubResource("CanvasTexture_k70ah")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1437494191]
+position = Vector2(1, -294)
+
+[node name="Sprite2D" type="MeshInstance2D" parent="Node2D" unique_id=2121513478]
+scale = Vector2(3, 3)
+mesh = SubResource("SphereMesh_8u238")
+texture = SubResource("CanvasTexture_k70ah")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1252734953]
