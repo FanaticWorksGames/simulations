@@ -8,6 +8,5 @@ script = ExtResource("1_by27v")
 initial_point = NodePath("Point")
 
 [node name="Point" parent="." unique_id=1756694262 instance=ExtResource("2_pbxby")]
-position = Vector2(0, 289)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1237895245]
